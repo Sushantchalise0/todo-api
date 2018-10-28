@@ -1,16 +1,15 @@
 {
-  "name": "todo-api",
+  "name": "api_test",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node server/server.js",
     "test": "mocha server/**/*.test.js",
-    "test-watch":"nodemon --exec \"npm test\"|| true"
-    },
-    "engines": {
-      "node": "10.8.0"
-    },
+    "test-watch": "nodemon --exec \"npm test\"|| true"
+  },
+  "engines": {
+    "node": "10.8.0"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -24,5 +23,14 @@
     "mocha": "^5.2.0",
     "nodemon": "^1.18.3",
     "supertest": "^3.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sushantchalise0/api-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sushantchalise0/api-test/issues"
+  },
+  "homepage": "https://github.com/Sushantchalise0/api-test#readme",
+  "description": ""
 }
