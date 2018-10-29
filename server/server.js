@@ -27,16 +27,16 @@ app.post('/todos', (req, res) => {
 
 
 //GET WHERE TEXT IS HELLO FROM POSTMAN
-app.get('/todos', (req, res) => {
-    var text = "hello from postman";
+// app.get('/todos', (req, res) => {
+//     var text = "hello from postman";
 
-    Todo.find({text}).then((todos) => {
-        res.send({todos});
-    }, (e) => {
-        res.status(400).send(e);
-    });
+//     Todo.find({text}).then((todos) => {
+//         res.send({todos});
+//     }, (e) => {
+//         res.status(400).send(e);
+//     });
 
-});
+// });
 
 //GET ANY TEXT DISPLAYED
 app.post('/todos/:text', (req, res) => {
@@ -59,7 +59,7 @@ app.get('/todos', (req, res) => {
     });
 });
 
-GET USING ID
+//GET USING ID
 app.get('/todos/:id', (req, res) => {
     var id = req.params.id;
 
